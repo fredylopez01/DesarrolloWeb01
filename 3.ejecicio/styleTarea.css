@@ -1,0 +1,17 @@
+.cajaAzul{
+	background-color: #00f;
+	color: #fff;
+	text-align: left;
+}
+
+.cajaVerde{
+	background-color: #0f0;
+	color: #00f;
+	text-align: center;
+}
+
+.cajaRoja{
+	background-color: #f00;
+	color: #ff0;
+	text-align: right;
+}

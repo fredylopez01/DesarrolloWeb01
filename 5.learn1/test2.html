@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prueba de CSS</title>
+	<style type="text/css">
+		#principal{
+			width: 500px;
+			background-color: #00F;
+			text-align: center;
+			margin: 50px auto;
+			padding: 15px;
+			border: 3px solid #000;
+			border-radius: 10px;
+			box-shadow: #999 8px 8px 5px;
+			background:-webkit-linear-gradient(left, rgb(69, 191, 191), #B01ED9);
+			/*background: -webkit-radial-gradient(center, circle,#35F, #F99);*/
+			background:-moz-linear-gradient(top, #00F, #3FF);
+			background:-ms-linear-gradient(top, #00F, #3FF);
+			background:-o-linear-gradient(top, #00F, #3FF);
+			/*outline: 2px dashed #F00;
+			outline-offset: 15px;*/
+			/*-webkit-transform:scale(0.8);*/
+			/*transform: rotate(355deg);*/
+			/*transform: skew(-15deg);*/
+			transition: transform  1s ease 0.5s;
+		}
+
+		#principal:hover{
+			transform: rotate(-5deg);
+		}
+
+		@font-face{
+			font-family: 'elegante';
+			src:url('Elegante.ttf');
+		}
+
+		#titulo{
+			font: bold 60px 'elegante';
+			text-shadow: rgb(242, 174, 46) 3px 3px 2px;
+			color: rgba(0,0,0, 0.9);
+		}
+	</style>
+</head>
+<body>
+	<header id="principal">
+		<span id="titulo">Estilos CSS3</span>
+	</header>
+</body>
+</html>

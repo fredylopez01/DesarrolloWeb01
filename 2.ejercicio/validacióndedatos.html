@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación de datos</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="numeros">Números</label>
+        <input maxlength="10" minlength="4" type="text" name="numeros" required pattern="[0-9]+">
+        <br>
+        <label for="letras">Letras</label>
+        <input type="text" name="letras" required pattern="[a-zA-Z]+">
+        <br>
+        <label for="textoArea">Comentario</label>
+        <textarea name="textoArea" required cols="15" rows="3">Hola...</textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

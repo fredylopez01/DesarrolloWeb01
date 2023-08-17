@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Temario</title>
+    <style>
+        #formulario {
+            background-color: greenyellow;
+            text-align: center;
+            width: 30%;
+            margin: auto;
+            padding: 1%;
+            float: left;
+        }
+        #formulario input {
+            margin: 1%;
+        }
+        .inputs {
+            background-color: cornflowerblue;
+            text-align: center;
+            width: 30%;
+            margin: auto;
+            float: right;
+        }
+        .inputs input {
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página Oficial</h1>
+    <div>
+        <h2>Hola mundo</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Tempore suscipit deleniti itaque. Assumenda, itaque? Nemo totam optio atque?
+            Odio soluta harum vero laborum unde sapiente temporibus eaque ad incidunt! Vel!</p>
+        <ol>
+            <li>Vamos a trabajar en html</li>
+            <li>A desarrollar muchos puntos y etiquetas</li>
+        </ol>
+    </div>
+    <div>
+        <h2>Fundamentod de la empresa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim ducimus minus,
+            dolor odit impedit nobis labore consequuntur natus
+            tenetur ratione vero officia magni unde sunt delectus est nemo rem.</p>
+        <ul>
+            <li>Trabajar por el progreso</li>
+            <li>Mejorar día tras día</li>
+        </ul>
+    </div>
+    <br>
+    <section id="formulario">
+        <h2>Formulario de Registro</h2>
+        <form method="post" action="control.select.html">
+            <input type="text" name="identificacion" placeholder="Nombre">
+            <br>
+            <input type="text" name="identificacion" placeholder="Correo/Número">
+            <br>
+            <input type="password" name="seguridad" placeholder="Contaseña">
+            <br>
+            <input type="password" name="seguridad" placeholder="Contaseña de confirmación">
+            <br>
+            <input type="submit" value="Registrarme">
+        </form>
+    </section>
+    <section class="inputs">
+        <h2>Inputs</h2>
+        <form method="post" action="textarea.html">
+            <label for="texto">Campo de texto</label>
+            <input type="text" name="texto" placeholder="Escribe un comentario">
+            <br>
+            <label for="fecha">Fecha de nacimento</label>
+            <input type="date" name="fecha">
+            <br>
+            <label for="tiempo">¿Qué hora es?</label>
+            <input type="time" name="tiempo">
+            <br>
+            <label for="rango">Rangos</label>
+            <input type="range" name="rango">
+            <br>
+            <label for="numeros">Números</label>
+            <input type="number" name="numeros">
+            <br>
+            <input type="submit" value="Terminar">
+        </form>
+    </section>
+</body>
+</html>

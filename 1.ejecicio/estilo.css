@@ -1,0 +1,62 @@
+body {
+        text-align: justific;
+}
+
+h1 { 
+        font-size: 40px;
+        color: rgb(220, 40, 226);
+        text-align: left;
+        margin-bottom: 0%;
+}
+
+.menu {
+        background-color: rgb(194, 58, 212);
+        text-align: center;
+}
+
+.menu form {
+        display: inline-block;
+}
+
+.menu button {
+        list-style: none;
+        padding: 1%;
+        display: inline-block;
+}  
+
+.seccion { 
+        width: 72%;
+        float: left;
+        background-color: rgb(88, 159, 240);
+}
+
+.barra {
+        width: 25%;
+        float: right;
+        background-color: rgb(238, 238, 135);
+}
+
+.barra li {
+        list-style: none;
+        text-align: center;
+        padding: 3%;
+}
+
+.img1 {
+        width: 80px;
+}
+
+.img2, .img3 {
+        width: 30%;
+        padding: 3%;
+}
+
+.registro {
+        background-color: greenyellow;
+        float: right;
+        width: 25%;
+}
+
+.registro br {
+        margin: 3%;
+}

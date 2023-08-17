@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control select o lista desplegable</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+        section {
+            border: 1px solid black;
+            margin: 1%;
+            width: 30%;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Textarea</h2>
+        <label for="texto1">Area del parrafo</label>
+        <textarea name="texto1" rows="4" cols="20"></textarea>
+    </section>
+    <section>
+        <h2>Lista desplegable (select)</h2>
+        <label for="sexo">Elige tu sexo</label>
+        <select name="sexo">
+            <option value="f">Femenino</option>
+            <option value="m">Masculino</option>
+        </select>
+        <br>
+        <label for="paises">Nacionalidad</label>
+        <select name="paises">
+            <option disabled value="a">seleccione pais</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="peru">Perú</option>
+        </select>
+    </section>
+    <section>
+        <form>
+            <h2>Input-radio</h2>
+            <p>1. En que trasporte va a su trabajo</p>
+            <input type="radio" name="pregunta1"> <label for="respuesta">Caminar</label>
+            <br>
+            <input type="radio" name="pregunta1"> <label for="respuesta">Bus</label>
+            <br>
+            <input type="radio" name="pregunta1"> <label for="respuesta">Carro</label>
+        </form>
+    </section>
+    <section>
+        <form>
+            <h2>Input-checkbox</h2>
+            <p>a. ¿Qué cosas le gustaría tener?</p>
+            <input type="checkbox" name="bien">
+            <label for="bien">Casa</label>
+            <br>
+            <input type="checkbox" name="c">
+            <label for="c">apartamento</label>
+        </form>
+    </section>
+    <section>
+        <h2>Declarar botones</h2>
+        <form method="post" action="index.html">
+            <button>Inicio</button>
+            <button>Menú</button>
+            <button>Contactos</button>
+            <button>Ayuda</button>
+        </form>
+    </section>
+</body>
+</html>

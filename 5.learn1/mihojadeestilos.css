@@ -1,0 +1,35 @@
+#cabeceraweb{
+	background-color: #00f;
+}
+
+#navegacionprincipal{
+	background-color: #777;
+}
+
+#barralateral{
+	background-color: #049;
+	float: left;
+	height: 925px;
+	margin-right: 2px;
+}
+
+#contenidoprincipal{
+	background-color: #164;
+	margin-left: 215px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#imageOne{
+	width: 500px;
+}
+
+#piedepagina{
+	background-color: #790;
+	clear: both;
+}
+
+li{
+	background-color: bisque;
+	display: inline;
+}
