@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        td, th, caption {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Esta es mi cabecera</th>
+        </tr>
+        <tr>
+            <td>Un elemento</td>
+            <td>Un elemento</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <caption>Titulo de tabla</caption>
+        <thead>
+            <tr>
+                <th>Esta es mi cabecera</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Un elemento</td>
+                <td>Un elemento</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Pie de pagina</td>
+                <td>Pied de pagina</td>
+            </tr>
+            <colgroup>
+                <col style="background-color: red;">
+                <col span="2" style="background-color: yellow;">
+            </colgroup>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <form name="formualrio" method="post" action="www.wikipedia">
+        Nombre de usuario
+        <input type="text" name="nombre" value="">
+        <input type="submit" value="Enviar">
+        <!--Type: search, text, tel, url, email, password, hidden, textarea-->
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --colordefondo: #fcf;
+    --coloroscuro: #1a1a1a;
+    --colorazul: blue;
+
+}
+
+body{
+    background-color: var(--colordefondo);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul{
+    margin: 0;
+}
+
+.contenedor{
+    max-width: 500px;
+    width: 9090%;
+    padding: 30;
+    border-radius: 20px;
+}
+
+.grupo{
+    padding: 60 PX 0;
+    border-bottom:  1px solid red;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.grupo div p,
+.grupo div div, 
+.grupo div span,
+.grupo ul li{
+    background-color: #abdbdbdb;
+    padding: 10px;
+}
+
+.enlace:link{
+    background-color: blue;
+}
+
+.enlace:visited{
+    color: chartreuse;
+}
+
+.enlace:active{
+    background-color: #000;
+}
+
+.enlace:hover{
+    color: orange
+}
+
+.parrafos p:first-child{
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.parrafos p:last-child{
+    background-color: var(--coloroscuro);
+    color: #fff;
+}
+
+.elementos p:first-of-type{
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.elementos p:last-of-type{
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.lista1 :nth-child(even){
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.lista1 :nth-child(odd){
+    background-color: var(--coloroscuro);
+    color: #fff;
+}
+
+.lista2 p:nth-of-type(2){
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.lista2 p:nth-last-of-type(3){
+    background-color: var(--coloroscuro);
+    color: #fff;
+}
+
+.lista3 p:only-child {
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.lista4 p:only-of-type{
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.pseudoelementos p::first-line{
+    background-color: var(--colorazul);
+    color: #fff;
+}
+
+.pseudoelementos p::first-letter{
+    background-color: var(--coloroscuro);
+    color: #fff;
+    font-size: 300%;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+

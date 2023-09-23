@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #000;
+        }
+        th, td {
+            vertical-align: auto;
+            padding: 0.3em;
+            text-align: center;
+        }
+        th {
+            background-color: #74ec45;
+        }
+        caption {
+            font-size: 20px;
+            padding: 0.3em;
+            border: 1px solid #000;
+            background-color: cornflowerblue;
+        }
+        tfoot {
+            font-style: italic;
+            font-size: 13px;
+            width: 100%;
+            text-align: center;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #2299dd54;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #1ee99454;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estadisticas para el conocimiento del mundo</h1>
+    <p>Estos son alf¿gunas estadisticas recopiladas durante los utlimos meses</p>
+    <table>
+        <caption>Ingresos de diferentes países</caption>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Enero</th>
+                <th>Febrero</th>
+                <th>Marzo</th>
+                <th>Abril</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Colombia</td>
+                <td>2 Billones</td>
+                <td>1.55 Billones</td>
+                <td>1 Billon</td>
+                <td>1.9 Billones</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td rowspan="2">500 Billones</td>
+                <td>455 Billones</td>
+                <td>480 Billones</td>
+                <td>490 Billones</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>550 Billones</td>
+                <td>500 Billones</td>
+                <td>520 Billones</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td>3 Billones</td>
+                <td>2 Billones</td>
+                <td>1.5 Billones</td>
+                <td>2.3 Billones</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Registrado por la organizacion de estadisticas Mundiales.org (Año: 2050)</td>
+            </tr> 
+        </tfoot>
+    </table>
+</body>
+</html>
