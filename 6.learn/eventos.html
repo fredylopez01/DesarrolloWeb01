@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en javaScript</title>
+    <script>
+        var imagen;
+
+        function imagenEvento(){
+            alert("Esta es una imagen");
+        }
+
+        function evento1(){
+            imagen=document.getElementsByTagName("img")[0];
+            imagen.addEventListener("click", crecer, false);
+            imagen.addEventListener("mouseover", normal, false);
+        }
+
+        function crecer(){
+            imagen.width=1160;
+            imagen.height=774;
+        }
+
+        function normal(){
+            imagen.width=580;
+            imagen.height=387;
+        }
+
+        window.onload=evento1;
+    </script>
+</head>
+<body>
+    <p>
+        <img src="image3.jpg">
+    </p>
+</body>
+</html>
