@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#contenedor{
+    height: 800px;
+    width: 90%;
+    margin: 0.5em auto;
+    margin-bottom: 3em;
+}
+
+#contenedor header:first-child,
+#contenedor footer:last-child{
+    height: 20%;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer{
+    border: 2px solid blue;
+}
+
+nav,
+footer{
+    background-color: #a4a4a4;
+}
+
+header,
+nav,
+section,
+footer{
+    margin: 1em auto;
+}
+
+figure + h1{
+    width: 60%;
+    margin-left: 1%;
+    font-size: 3em;
+    padding: 0;
+    margin-top: 0.2em;
+    float: left;
+    text-align: center;
+}
+
+header figure:first-child{
+    float: left;
+    margin: 0.5em auto;
+}
+
+figure > img{
+    width: 253.3px;
+    height: 108.6;
+}
+
+figcaption{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+}
+
+h1 ~ figure{
+    float: right;
+    margin: 0.5em 0.5em 0 0;
+}
+
+#img-programar{
+    width: 180.3px;
+    height: 58.6;
+}
+
+nav{
+    height: 8%;
+}
+
+nav button{
+    width: 23%;
+    height: 70%;
+    margin-top: 0.6em;
+    margin-left: 1.3%;
+    font-size: 89%;
+    background-color: #07043a;
+    border-color: #07043a;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+nav button:nth-child(odd){
+    border-bottom: 4px solid #2cdc11;
+}
+
+nav button:nth-child(even){
+    border-bottom: 4px solid #f00635;
+}
+
+nav button:nth-of-type(1):hover,
+nav button:nth-of-type(3):hover{
+    background-color: #2cdc11;
+    border-color: #2cdc11;
+    border-bottom: 4px solid #07043a;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+}
+
+nav button:nth-of-type(2):hover,
+nav button:nth-of-type(4):hover{
+    background-color: #f00635;
+    border-color: #f00635;
+    border-bottom: 4px solid #07043a;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+}
+
+button a:hover{
+    text-decoration: underline;
+}
+
+nav button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.content {
+    height: 50%;
+}
+
+.content h2:only-of-type{
+    padding: 0;
+    margin: 0 0 0 0.5em;
+    text-align: center;
+    width: 68%;
+}
+
+#articles{
+    float: left;
+    height: 85%;
+    width: 68%;
+}
+
+.article{
+    height: 50%;
+    width: 100%;
+    background-color: #a4a4a4;
+    margin: 0.5em;
+    padding: 0.3em;
+}
+
+#articles article h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+#articles article p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+#articles article div::first-letter{
+    background-color: #07043a;
+    color: #FFFFFF;
+    font-size: 300%;
+    border-radius: 1px;
+    box-shadow: 3px 3px 0 red;
+    padding: 6px 3px;
+    margin-right: 5px;
+    float: left;
+}
+
+#aside{
+    height: 87%;
+    width: 28%;
+    background-color: #a4a4a4;
+    float: right;
+    margin: 0.5em;
+    text-align: center;
+    padding: 0 1%;
+}
+
+aside h3{
+    margin: 3%;
+    padding: 0 0 2% 0;
+}
+
+aside div h4{
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.enlace-noticia{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside div{
+    border: 3px solid rgb(255, 230, 0);
+    background-color: #07043a;
+    color: rgb(255, 230, 0);
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
+    font-size: 85%;
+}
+
+aside div:hover{
+    transform: rotate(-5deg);
+    text-decoration: underline;
+}
+
+#mas-noticias:link{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 230, 0);
+    color: #FFFFFF;
+}
+
+#mas-noticias:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-size: 1em;
+    background-color: #07043a;
+}
+
+footer h2,
+footer h2:nth-of-type(2),
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer div:first-of-type{
+    float: left;
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 0.8em;
+}
+
+.contactos{
+    float:left;
+    margin: 1em 1.5em;
+}
+
+.contactos ul::first-line{
+    color: #f00635;
+    background-color: #07043a;
+}
+
+footer div:last-of-type{
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em;
+    font-size: 0,8em;
+}
+
+footer div > ul li::marker{
+    content: "";
+}
+
+footer div ul a img{
+    width: 1em;
+    height: 1em;
+}
+
+footer a:last-of-type::after {
+    content: ' (' attr(href) ')';
+}
