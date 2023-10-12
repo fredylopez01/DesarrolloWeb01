@@ -1,0 +1,36 @@
+.container{
+    background-color: grey;
+    min-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+
+    gap: 20px 40px;
+}
+
+.item{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-size: 5rem;
+}
+
+.item-3{
+    background-color: blue;
+    order: 1;
+}
+
+.item-2{
+    background-color: pink;
+    order: 2;
+}
+
+@media  and(max-width:800px) {
+    .container{
+        flex-direction: column;
+    }
+    
+}

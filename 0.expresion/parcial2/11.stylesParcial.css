@@ -67,8 +67,8 @@ h1 ~ figure{
 }
 
 #img-programar{
-    width: 180.3px;
-    height: 58.6;
+    width: 193.3px;
+    height: 78.6;
 }
 
 nav{
@@ -237,7 +237,6 @@ ul {
 
 footer div:first-of-type{
     float: left;
-    margin-top: 1em;
     margin-left: 2em;
     font-size: 0.8em;
 }
@@ -255,7 +254,6 @@ footer div:first-of-type{
 footer div:last-of-type{
     float: right;
     margin-right: 1em;
-    margin-top: 1em;
     font-size: 0,8em;
 }
 
@@ -266,6 +264,18 @@ footer div > ul li::marker{
 footer div ul a img{
     width: 1em;
     height: 1em;
+}
+
+#redes-sociales > ul > li{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+footer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 footer a:last-of-type::after {
