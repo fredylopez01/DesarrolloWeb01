@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pseudaclases</title>
+    <link rel="stylesheet" href="12.styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">pseudoclases para formularios</h1>
+
+        <form action="" class="formulario">
+
+            <div class="grupo">
+                <labbel for="">:focus</labbel>
+                <input type="text" class="nombre" placeholder="nombre">
+            </div>
+            <div class="grupo">
+                <label for="">:disabled</label>
+                <input type="text" class="id" placeholder="Id1" disabled>
+
+            </div>
+
+            <div class="grupo">
+                <label for="">:valid / :invalid</label>
+                <input type="email" value="correo" placeholder="jorge.cuervo@uptc.edu.co" id="" class="correo">
+            </div>
+
+            <div class="grupo">
+                <label for="">:required</label>
+                <input type="text" class="mensaje" placeholder="mensaje" required>
+            </div>
+
+            <div class="grupo">
+                <label for="">checked</label>
+                <div class="radio">
+                    <label for=""><input type="checkbox" name="" id="terminos"></input>acepto los términos</label>
+                </div>
+            </div>
+
+            <div class="grupo checkbox">
+                <label for="">:default</label>
+                <div class="checkbox">
+                    <label for="">opción 1<input type="radio" name="option" id="1" value="1" class=""></label>
+                    <label for="">opción 2<input type="radio" name="option" id="2" value="2" class=""></label>
+                    <label for="">opción 3<input type="radio" name="option" id="3" value="3" checked class=""></label>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

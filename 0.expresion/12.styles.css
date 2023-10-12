@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --fondoprimario: rgb(196, 196, 245);
+    --coloroscuro: #1a1e21;
+    --azulrey: blue;
+    --azulcielo: rgb(125, 215, 247);
+
+}
+
+body{
+    background-color: var(--fondoprimario);
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+}
+
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--coloroscuro);
+    margin-bottom: 20px;
+}
+
+.formulario .grupo{
+    margin-bottom: 60px;
+}
+
+.formulario .grupo>input{
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, .2);
+}
+
+.formulario .grupo>label{
+    display: block;
+    color: var(--coloroscuro);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.formulario .nombre:focus{
+    border: 10px solid var(--azulrey);
+}
+
+.formulario .id:disabled{
+    background-color: var(--fondoprimario);
+}
+
+.formulario .correo:invalid{
+    background-color: red;
+    border: none;
+}
+
+.formulario .correo:valid{
+    background-color: greenyellow;
+    border: none;
+}
+
+.formulario .mensaje:required{
+    background-color: pink;
+    border: none;
+}
+
+.formulario .radio input:checked{
+    box-shadow: 0px 0px 10px 1px violet;
+}
+
+.formulario .checkbox input:default{
+    box-shadow: 0px 0px 10px 1px rgb(231, 161, 31);
+}
