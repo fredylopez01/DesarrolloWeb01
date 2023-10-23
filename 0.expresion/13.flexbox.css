@@ -6,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-
     gap: 20px 40px;
 }
 
@@ -28,7 +27,7 @@
     order: 2;
 }
 
-@media  and(max-width:800px) {
+@media (max-width:800px) {
     .container{
         flex-direction: column;
     }
