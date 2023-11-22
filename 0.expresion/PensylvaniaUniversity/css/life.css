@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(120deg, #afecff80 0%, #b5ccdf80 100%), url(https://www.upenn.edu/sites/default/files/styles/card_3x2/public/2023-06/fisher-fine-arts-exterior.jpeg?h=b66937a8&itok=Le7Yx6eb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel1{
+margin: 30vh auto;
+text-align: justify;
+padding: 30px;
+color: #011f5b;
+background: #ffffff7c;
+}
+.phrase h1,
+.panel2 h1{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 3rem;
+}
+.phrase p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 2rem;
+}
+.containerP2{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+    padding: 5vh 3vw;
+}
+.containerP2 div:nth-child(1){
+    grid-column: 1;
+}
+.containerP2 div:nth-child(2){
+    grid-column: 2;
+}
+.containerP2 div:nth-child(3){
+    grid-column: 3;
+}
+.containerP2 div:nth-child(4){
+    grid-column: 4;
+}
+.minContent{
+    width: 22vw;
+    object-fit: cover;
+    background: #fff;
+    text-align: center;
+    padding: 3vh auto;
+    margin-bottom: 2vh;
+}
+.minContent img{
+    width: 22vw;
+    height: auto;
+    margin-top: 2vh;
+}
+.minContent h1{
+    margin-bottom: 2vh;
+    color: #011f5b;
+}
+.minContent p{
+    margin: 1vh auto;
+}
+.panel1Ad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    object-fit: cover;
+    padding: 5vh;
+    color: #fff;
+    margin-bottom: 9vh;
+    margin-top: 9vh;
+  }
+  .Ad2{
+    background: #011f5b;
+  }
+  .text{
+    display: inline;
+    width: 50%;
+  }
+  .text h1{
+    font-size: 3.5rem;
+    color: #fff;
+  }
+  .text p{
+    margin: 10vh auto;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+.red{
+    background: #990000;
+}

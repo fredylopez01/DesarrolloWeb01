@@ -1,0 +1,32 @@
+.panel1Ad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    object-fit: cover;
+    background: #e3d8c6be;
+    padding: 5vh;
+  }
+  .text{
+    display: inline;
+    width: 50%;
+  }
+  .text h1{
+    font-size: 3.5rem;
+    color: #fff;
+  }
+  .text p{
+    margin: 5vh auto;
+    padding: 5vh;
+    text-align: justify;
+    background: #9c1807be;
+    box-shadow: 10px 10px 0 #644d4d;
+    font-size: 1.3rem;
+  }
+  .Ad2{
+    background: #9c1807be;
+    padding: 5vh;
+  }
+  .Ad2 p{
+    padding: 8vh 5vh;
+    background: #e3d8c6be;
+  }

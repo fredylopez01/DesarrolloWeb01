@@ -1,0 +1,97 @@
+footer{
+    background: #011F5B;
+    color: #fff;
+    padding: 10vh 30px;
+    width: 99vw;
+    overflow: hidden;
+}
+.conatainer-Footer{
+    padding: 20vh 30px;
+    background-image: linear-gradient(120deg, #011f5b04 0%, #011F5B04 100%), url(https://www.upenn.edu/themes/custom/penn_global/assets/img//footer-16.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.topFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.colum1, .colum2, .colum3{
+    width: 30vw;
+}
+.conatainer-Footer h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+}
+.conatainer-Footer ul li::marker{
+    content: ' ';
+}
+.conatainer-Footer li{
+    padding: 2vh auto;
+    margin: 3vh auto;
+    border-bottom: 1px solid #96340e;
+    align-items: center;
+}
+.conatainer-Footer li:hover{
+    background: #96340e;
+    transform: scale(101%);
+    transition: transform .3s ease-in-out;
+}
+.colum3{
+    text-align: center;
+}
+.colum3 p{
+    font-style: italic;
+    font-size: 1rem;
+    margin: 5vh 0;
+}
+.colum3 button{
+    padding: 3vh 1vw;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #96340e;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.colum3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.colum3 button:hover{
+    background: #ffffff04;
+}
+.downFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: right;
+    border-top: 1px solid #96340e;
+    padding-top: 5vh;
+    border-bottom: 1px solid #96340e;
+    padding-bottom: 5vh;
+}
+.social-media{
+    font-size: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left:  8vw;
+    color: #fff;
+}
+.social-media a{
+    color: #fff;
+    margin: 0 .3vw;
+    padding: 0;
+    border-radius: 10px;
+}
+.social-media a:hover{
+    transform: scale(130%);
+    color: #96340e;
+    text-shadow: 3px 3px 4px #fff;
+}
+.copy{
+    padding-left: 10vw;
+}

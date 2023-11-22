@@ -1,0 +1,133 @@
+.panel1{
+    margin: 50vh auto;
+    text-align: justify;
+    padding: 30px;
+    color: white;
+}
+.phrase h1,
+.panel2 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+}
+.phrase p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+.panel2{
+    background-image: linear-gradient(120deg, #011f5b04 0%, #011F5B04 100%), url(https://www.upenn.edu/sites/default/files/styles/priority_card_3x2/public/2020-12/detlefsen-classroom-1.jpg?h=db04e5f5&itok=3aAgkqYK);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10vh 5vw;
+}
+.panel22{
+    background-image: linear-gradient(120deg, #011f5b04 0%, #011F5B04 100%), url(https://pennsway.upenn.edu/sites/default/files/inline-images/PennsWay-Week-6-Ending-Graphic-1200.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel2>.content{
+    font-size: 1.5rem;
+    background: #e3d8c6;
+    padding: 10vh 5vw;
+    width: 60vw;
+}
+.content p{
+    font-size: .9rem;
+    margin: 3vh auto;
+}
+.content button{
+    padding: 3vh 1vw;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.content a{
+    color: #fff;
+    text-decoration: none;
+}
+.content button:hover{
+    background: #011F5B;
+}
+.title{
+    font-size: 1.8rem;
+    background-color: #0b4a6e;
+    color: #fff;
+    text-align: center;
+}
+main{
+    display: flex;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: 0 7px 0 7px;
+    background-color: #0b4a6e;
+}
+main div{
+    width: 25%;
+    margin: 1em;
+}
+.list-main h3{
+    border-top: 5px solid #96340e;
+    border-top-width: 5px;
+    padding-top: 1em;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25px;
+}
+.list-main h3{
+    text-decoration: none;
+    color: #fff;
+}
+.list-main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-collapse: separate;
+}
+.list-main ul li {
+    display: block;
+    width: 100%;
+    color: #fff;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0.6em 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.list-main ul li{
+    border-bottom: 1px solid #ffffff5b;
+}
+.list-main ul li:last-child{
+    border-bottom: none;
+}
+.list-main ul li a:hover{
+    color: #006eaf;
+}
+@media screen and (max-width:700px) {
+    .phrase h1,
+    .panel2 h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2rem;
+}
+    .panel2{
+        padding: 1vh 1vw;
+    }
+    .content button{
+        padding: 3vh 1vw;
+    }
+    .panel2>.content{
+        padding: 10vh 2vw;
+        width: 90vw;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    main{
+        flex-direction: column;
+    }
+    .list-main{
+        width: 90vw;
+    }
+}

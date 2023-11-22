@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --colorRojoOscuro: #780000;
+    --colorRojoClaro: #C1121F;
+    --colorBlanco: #ffffff;
+    --colorAzulOscuro: #003049;
+    --colorAzulClaro: #669BBC;
+    --Noto-sans: 'Noto Sans', sans-serif;
+    --Manor-mono: 'Major Mono Display', monospace;
+    --Monserrat: 'Montserrat', sans-serif;
+}
+body{
+    background: linear-gradient(#002f4986 0%, #00304986 100%);
+}
+.background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    z-index: -1;
+}
+header{
+    background: #ffffff04;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    transition: background-color 1s ease-in-out;
+    z-index: 1;
+    padding: 1px 3vw;
+}
+.sticky{
+    background: #C1121F;
+}
+#text-header{
+    color: #003049;
+    transition: color 0.5s;
+}
+.nav-header-button {
+    background-color: var(--colorAzulClaro);
+    transition: background-color 0.3s ease;
+}
+#nav-header-image{
+    display:flex;
+    float: left;
+    margin-top: 1vh;
+    width: 210px;
+    margin-right: 35vw;
+}
+#logo{
+    width: 200px;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90%;
+}
+.header-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60%;
+    padding: 2vh 1vw;
+}
+.nav-header-item:not(:first-child){
+    text-align: center;
+}
+#text-header{
+    font-family: var(--Monserrat);
+    font-weight: 200;
+    color: var(--colorBlanco);
+}
+.header-items button{
+    background-color: var(--colorAzulOscuro);
+    border: 1px solid var(--colorAzulOscuro);
+    padding: 1em 1.5em;
+    margin: 0 2px;
+}
+.text-header{
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--Monserrat);
+    font-weight: 400;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+#top{
+    border-bottom: 2px solid #fff;
+}
+#down{
+    height: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#down a{
+    color: #fff;
+    text-decoration: none;
+}
+#down button{
+    padding: 5px 15px;
+    background-color: #ffffff04;
+    border: none;
+}
+.fullscreen-container {
+    background-image: linear-gradient(120deg, #011f5b04 0%, #011F5B04 100%), url(https://www.upenn.edu/sites/default/files/styles/card_3x2/public/2020-12/pennovation-aerial.jpg?h=572b579b&itok=KWRJPR1l);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    width: 100vw;
+    position: fixed;
+    padding: 0;
+    color: #fff;
+    top: -100%;
+    right: 0;
+    transition: all 800ms linear;
+}
+.visibleSearch{
+    top: 0;
+}
+.fullscreen-container form{
+    width: 50%;
+}
+.fullscreen-container img{
+    margin-left: 30%;
+    cursor: pointer;
+    padding: 8px;
+    border: 3px solid #011F5B;
+    background-color: #011F5B;
+}
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 100%;
+}
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+}
+.search{
+    height: 103vh;
+    background-color: #011F5B;
+    position: fixed;
+    width: 50%;
+    padding: 3vw;
+    color: #fff;
+    right: -50%;
+    top: -3vh;
+    transition: all 800ms linear;
+}
+.openSearch{
+    right: 0%;
+}
+.search img{
+    margin-left: 90%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    padding: 5px;
+    border: 3px solid #96340e;
+    border-radius: 50%;
+    background-color: #96340e;
+}
+.field input{
+    width: 90%;
+    height: 20px;
+    margin-bottom: 4vh;
+}
+.search h2{
+    font-size: 2rem;
+    color: #e3d8c6;
+    margin-bottom: 4vh;
+}
+.search ul li{
+    margin: 2vh;
+    border-bottom: 2px solid #96340e;
+}
+#down button:hover{
+    border-bottom: 3px solid #d3ff0c;
+}
+@media screen and(max-width:850px) {
+    header{
+        padding: 1px 1vw;
+    }
+    .nav-header{
+        display: flex;
+       flex-direction: column;
+       height: auto;
+    }
+    .header-items{
+        width: 100%;
+        font-size: 1rem;
+        margin: 0;
+        height: auto;
+        padding: 0;
+    }
+    #nav-header-image{
+        margin-top: 1vh;
+        width: 210px;
+        margin-right: 0vw;
+    }
+    #down{
+        height: auto;
+    }
+    #down button{
+        padding: 3px 9px;
+    }
+    .text-header{
+        font-size: .9rem;
+    }
+    .search{
+        width: 100%;
+        right: -100%;
+        padding: 4vh auto;
+    }
+    .openSearch{
+        right: 0vw;
+    }
+    .field input{
+        margin-bottom: 6vh;
+    }
+    .search h2{
+        font-size: 2rem;
+        color: #e3d8c6;
+        margin-bottom: 6vh;
+    }
+    .search ul li{
+        margin-bottom: 4vh;
+    }
+}
+@media screen and (max-width:1250px) {
+    .nav-header{
+        grid-area: 300px 1fr;
+    }
+    #nav-header-image{
+        grid-column: 1;
+        margin-right: 0;
+        width: 250px;
+    }
+    .header-items{
+        grid-column: 2/4;
+    }
+}

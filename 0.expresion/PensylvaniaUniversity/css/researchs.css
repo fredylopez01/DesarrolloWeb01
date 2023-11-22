@@ -1,0 +1,100 @@
+.panelDates{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    height: 40vh;
+    background: #011f5b;
+    align-items: center;
+    text-align: center;
+    color: aquamarine;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+.panelDates>h1{
+    grid-column: 1/4;
+    grid-row: 1;
+    width: 100%;
+    font-size: 4rem;
+    padding-top: 4vh;
+    text-align: center;
+}
+.panelDates div:first-of-type{
+    padding: auto 10vw;
+    margin: 0 auto;
+    grid-row: 2;
+    border-right: 2px solid #aa7f7f71;
+    border-left: 2px solid #aa7f7f71;
+}
+.panelDates div:nth-child(3){
+    padding: auto 10vw;
+    margin: 0 auto;
+    grid-row: 2;
+    border-left: 2px solid #aa7f7f71;
+    border-right: 2px solid #aa7f7f71;
+}
+.panelDates div:last-of-type{
+    padding: auto 10vw;
+    margin: auto;
+    grid-row: 2;
+    border-left: 2px solid #aa7f7f71;
+    border-right: 2px solid #aa7f7f71;
+}
+.panelDates span{
+    display: block;
+    font-size: 4rem;
+    font-style: normal;
+}
+.panelDates p{
+    font-style: italic;
+}
+.panel1Ad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    object-fit: cover;
+    padding: 5vh;
+    color: #fff;
+    margin-bottom: 10vh;
+  }
+  .Ad2{
+    background: #990000;
+  }
+  .text{
+    display: inline;
+    width: 50%;
+  }
+  .text h1{
+    font-size: 3.5rem;
+    color: #fff;
+  }
+  .text p{
+    margin: 5vh auto;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .minContent{
+    width: 45vw;
+    object-fit: cover;
+    background: #fff;
+    text-align: center;
+    padding: 3vh auto;
+    margin-bottom: 2vh;
+}
+.containerP2{
+    display: flex;
+    justify-content: space-evenly;
+    background: #011f5b;
+    padding: 5vh auto;
+}
+.minContent img{
+    width: 43vw;
+    height: auto;
+    margin-top: 2vh;
+}
+.minContent h1{
+    margin-bottom: 2vh;
+    color: #011f5b;
+}
+.minContent p{
+    margin: 3vh auto;
+}
