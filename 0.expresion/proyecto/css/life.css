@@ -1,0 +1,100 @@
+.panel{
+    margin-top: 12vh;
+    height: 72vh;
+    margin-bottom: 5vh;
+    padding: auto 30px;
+    padding-top: 20vh;
+    text-align: left;
+    gap: 1vh;
+    background-image: linear-gradient(120deg, #ffffff00 0%, #ffffff00 100%), url(https://www.yale.edu/sites/default/files/styles/cover_image_1220x686/public/cross_campus3.jpg?itok=LHmQqY89);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel h3{
+    width: 100%;
+    padding: 30px;
+    color:  #fff;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0 #13911e;
+}
+.panel p{
+    font-size: 1.7rem;
+    color: #fff;
+    width: 80%;
+    padding: 30px;
+}
+.panel-2 h3{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 2.5rem;
+    color: #00356b;
+    text-shadow: 2px 2px 0 #fff;
+    box-shadow: 0 2px 0 #00356b;
+    margin-bottom: 12vh;
+}
+.panel-2 h4{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #00356b;
+    text-shadow: 2px 2px 0 #fff;
+}
+.panel-2{
+    background-color: #11d121b0;
+    padding: 3vh;
+}
+.inf p{
+    color: #fff;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+.sections{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 3vh;
+    gap: 2vh;
+}
+.element{
+    width: 20vw;
+    padding: 1vh auto;
+    background: #e3d8c6;
+}
+.element img{
+    margin-top: 2vh;
+    width: 95%;
+}
+.element p{
+    font-size: .8rem;
+    margin-bottom: 2vh;
+}
+.text-Element{
+    width: 80%;
+    margin: .5vh auto;
+}
+.text-Element h4{
+    color: #11d121;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:850px) {
+    .panel{
+        height: auto;
+        padding-top: 2vh;
+        padding: auto 30px;
+        padding-top: 5vh;
+        margin-top: 1vh;
+    }
+    .panel-2 h3{
+        margin-bottom: 1vh;
+    }
+    .sections{
+        gap: 2vh;
+    }
+    .element{
+        width: 40vw;
+    }
+}

@@ -1,0 +1,138 @@
+.panel{
+    margin-top: 12vh;
+    height: 72vh;
+    margin-bottom: 5vh;
+    padding: auto 30px;
+    padding-top: 20vh;
+    text-align: left;
+    gap: 1vh;
+    background-image: linear-gradient(120deg, #42219c6e 0%, #21239c6e 100%), url(https://www.yale.edu/sites/default/files/styles/card_575x404/public/slide-6_0_0.jpg?itok=pVVhFSOp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel h3{
+    width: 100%;
+    padding: 30px;
+    color:  #fff;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0 #f48734;
+}
+.panel p{
+    font-size: 1.7rem;
+    color: #fff;
+    width: 80%;
+    padding: 30px;
+}
+.panel-1{
+    display: flex;
+    gap: 3vh;
+    height: auto;
+    background: #e3d8c6;
+    flex-wrap: wrap;
+    padding: 8% 4%;
+}
+.panel-1 div:first-of-type{
+    background: #026cb6;
+}
+.panel-1 div:first-of-type h4{
+    color: #00356b;
+}
+.panel-1 div:first-of-type button{
+    background: #00356b;
+    border: 1px solid #026cb6;
+}
+.panel-1 div:last-of-type{
+    background: #00356b;
+}
+.panel-1 div:last-of-type h4{
+    color: #026cb6;
+}
+.panel-1 div:last-of-type button{
+    background: #026cb6;
+    border: 1px solid #026cb6;
+}
+.panel-1:hover{
+    background: #ff9545;
+}
+.midle{
+    width: 45%;
+}
+.midle h4{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.midle p{
+    margin-bottom: 40px;
+    color: #e3d8c6;
+}
+.midle button{
+    height: 60px;
+    width: 180px;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.midle button:hover{
+    background: #00356b;
+}
+.midle button a{
+    color: #e3d8c6;
+    text-decoration: none;
+}
+.panel-2 {
+    padding: 3vh 0;
+    font-size: 1.5rem;
+}
+.panel-2 div{
+    margin: 15px 0;
+}
+.panel-2 i{
+    font-size: 2rem;
+    margin: 20px;
+}
+.panel-2 i:nth-child(odd){
+    color: #ff9545;
+}
+.panel-2 div:nth-child(1){
+    background: #00356b;
+    font-size: 2rem;
+    color: #e3d8c6;
+}
+.panel-2 div:nth-child(2){
+    background: #026cb6;
+    color: #00356b;
+}
+.panel-2 div:nth-child(3){
+    background: #e3d8c6;
+    color: #026cb6;
+}
+.panel-2 div:nth-child(4){
+    background: #026cb6;
+    color: #00356b;
+}
+.panel-2 div:nth-child(5){
+    background: #e3d8c6;
+    color: #026cb6;
+}
+@media screen and (max-width:850px) {
+    .panel{
+        height: auto;
+        padding-top: 2vh;
+        padding: auto 30px;
+        padding-top: 5vh;
+        margin-top: 1vh;
+    }
+    .panel h3{
+        font-size: 1.8rem;
+    }
+    .panel p{
+        font-size: 1.3rem;
+    }
+    .panel-1{
+        flex-direction: column;
+    }
+    .midle{
+        width: 90%;
+        margin: 0 auto
+    }
+}

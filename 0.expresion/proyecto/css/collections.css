@@ -1,0 +1,212 @@
+:root{
+    scroll-behavior: smooth;
+    --blueColor: #00356b;
+    --colorPaper: #e3d8c6;
+    --colorBlueLight: #026cb6;
+    --colorBlueLight2: #708fb8;
+    --colorOrange: #f48734;
+    --colorLigth: #fce188;
+    --colorBrown: #61262a;
+  }
+body{
+    background: #e3fdfb;
+}
+.panel-1{
+    margin-top: 12vh;
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+.slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    gap: 1em;
+}
+.slider-body{
+    grid-column: 1/3;
+    grid-row: 2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+.slider-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.slider-text{
+    padding: 30px;
+    background-color: #fff;
+    border-top: 10px solid var(--colorLigth);
+    border-right: 8px solid var(--colorOrange);
+    box-shadow: 20px -20px 0 var(--blueColor);
+    margin-right: 20px;
+}
+.slider-text h4{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #61262a
+}
+.slider-text p{
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: justify;
+}
+.slider-img{
+    width: 50vw;
+    border-radius: 1%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.slider-arrow{
+    width: 25%;
+    border: 1px solid #00356b;
+    background: #026cb6;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 20px;
+}
+.slider-arrow:hover{
+    background: #026cb6dd;
+    transition: all .3s ease-in-out;
+}
+.panel{
+    margin-top: 10vh;
+    height: 72vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    gap: 1vh;
+    flex-wrap: wrap;
+    background-image: linear-gradient(120deg, #00356b53 0%, #00356ba3 100%), url(https://www.yale.edu/sites/default/files/styles/yale_facts_1440x810/public/ataglance-1440x980.jpg?itok=4vjrXD42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel h3{
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color:  #fff;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0 #61262a;
+    margin: 40% auto;
+}
+.panel div:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+.panel div:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+}
+.panel div{
+    padding: 5vh auto;
+    text-align: center;
+}
+.amount{
+    text-align: center;
+    padding: 1% 20%;
+    color:  #fff;
+    font-size: 300%;
+    text-shadow: 3px 3px 0 #61262a;
+    margin-bottom: 5vh;
+    display: block;
+    border-bottom: 2px solid #e3d8c6;
+    box-shadow: 0 2px 0 #f48734;
+}
+.concept{
+    text-align: center;
+    color: #fff;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
+.panel-Phrase{
+    margin-top: 12vh;
+    height: 72vh;
+    margin-bottom: 5vh;
+    padding: auto 30px;
+    padding-top: 20vh;
+    text-align: left;
+    gap: 1vh;
+    background-image: linear-gradient(120deg, #e3d8c66b  0%, #e3d8c66b 100%), url(https://www.yale.edu/sites/default/files/styles/bold_visual_1440x810/public/benieckeplaza-1440x810.jpg?itok=2tzLGzc5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.panel-Phrase h3{
+    width: 100%;
+    padding: 30px;
+    color:  #00356b;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0 #f48734;
+}
+.panel-Phrase p{
+    font-size: 1.7rem;
+    color: #61262a;
+    width: 80%;
+    padding: 30px;
+}
+@media screen and (max-width:800px) {
+    .panel-1{
+        margin-top: 3vh;
+    }
+    .slider-body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr max-content;
+        margin-top: 0px;
+    }
+    .slider-img{
+        width: 100%;
+    }
+    .panel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 0vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .panel h3{
+        margin: 1vh auto;
+    }
+    .imgPanel{
+        width: 80vw;
+        object-fit: cover;
+    }
+    .amount{
+        text-align: center;
+        padding: 1% 20%;
+        color:  #fff;
+        font-size: 100%;
+        text-shadow: 3px 3px 0 #61262a;
+        margin-bottom: 3vh;
+        display: block;
+        border-bottom: 2px solid #e3d8c6;
+    }
+    .concept{
+        text-align: center;
+        color: #fff;
+        font-size: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0 auto;
+    }
+    .panel-Phrase{
+        margin-top: 0vh;
+        height: auto;
+        padding: 1vh auto;
+        padding-top: 20vh;
+    }
+}

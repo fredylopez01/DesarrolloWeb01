@@ -1,0 +1,124 @@
+body{
+    background:  #97bae7a8;
+    padding:  0;
+}
+.panel-1{
+    margin-top: 7vh;
+}
+.container{
+    overflow: hidden;
+    width: 100%;
+}
+.slider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    gap: .1em;
+}
+.slider-body{
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 2;
+    opacity: 0;
+    pointer-events: none;
+    padding: 3vh;
+    transition: opacity 1.5s;
+}
+.slider-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.slider-body h4{
+    font-size: 3rem;
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 3px 3px 0 #00356b;
+    margin-bottom: 2.5vh;
+}
+.slider-body h4::first-letter{
+    font-size: 3.5rem;
+    color: #00356b;
+    box-shadow: 5px 5px 0 #00356b;
+    background: #f48734;
+    border-radius: 5px;
+    margin-right: 1rem;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+}
+.slider-body p{
+    font-size: 2rem;
+    color: #fff;
+}
+.slider-arrow img{
+    height: 100%;
+}
+.slider-arrow{
+    border: 1px solid #00356b;
+    background: #ffffff;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+.slider-arrow:hover{
+    background: #708fb8;
+    transition: all .3s ease-in-out;
+}
+.slider>div:nth-child(3){
+    background-image: linear-gradient(120deg, #afecff1f 0%, #b5ccdf1f 100%), url(https://your.yale.edu/sites/default/files/landingpage_fall2020_benefits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(4){
+    background-image: linear-gradient(120deg, #afecff00 0%, #b5ccdf00 100%), url(https://your.yale.edu/sites/default/files/careers-landing-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(5){
+    background-image: linear-gradient(120deg, #afecff00 0%, #b5ccdf00 100%), url(https://your.yale.edu/sites/default/files/campusservices-landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(6){
+    background-image: linear-gradient(120deg, #afecff4f 0%, #b5ccdf4f 100%), url(https://your.yale.edu/sites/default/files/landingpage_fall2020_financial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(7){
+    background-image: linear-gradient(120deg, #2f7c946f 0%, #b5ccdf4f 100%), url(https://your.yale.edu/sites/default/files/learn_and_grow_header_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(8){
+    background-image: linear-gradient(120deg, #2f7c946f 0%, #b5ccdf4f 100%), url(https://your.yale.edu/sites/default/files/landingpage_fall2020_manager-toolkit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(9){
+    background-image: linear-gradient(120deg, #afecff00 0%, #b5ccdf00 100%), url(https://your.yale.edu/sites/default/files/banner-1175x435.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider>div:nth-child(10){
+    background-image: linear-gradient(120deg, #2f7c946f 0%, #395a754f 100%), url(https://your.yale.edu/sites/default/files/landingpage_fall2020_support.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width:700px) {
+    .slider-body h4{
+        font-size: 2.5rem;
+    }
+    .slider-body p{
+        font-size: 1rem;
+    }
+}
